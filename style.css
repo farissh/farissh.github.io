@@ -1,0 +1,58 @@
+.nav-item > a {
+  color: white;
+}
+
+.jumbotron {
+  background-image: url("img/background4.jpg");
+  background-size: cover;
+  height: 873px;
+  position: relative;
+}
+
+.jumbotron > .container > .display-4 {
+  text-align: center;
+}
+
+.panel {
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  padding: 30px;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.judul-panel {
+  margin: 20px 0px 20px 0px;
+}
+
+.carousel {
+  width: 240px;
+  height: 120px;
+  margin: auto;
+}
+
+#contact {
+  background-color: #e2edff;
+}
+
+.contact {
+  margin-top: 90px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+body {
+  background-color: b#e2edff;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  .jumbotron {
+    margin-top: -100px;
+  }
+}
