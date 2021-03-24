@@ -38,7 +38,7 @@ p {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -117,8 +117,8 @@ section {
 
 .about .content img {
   margin-bottom: 10px;
-  text-transform: uppercase;
   width: 350px;
+  position: relative;
 }
 
 .about h1 {
@@ -160,40 +160,14 @@ section {
   font-size: 50px;
 }
 
-/* DESKTOP VERSION */
-
-/* @media (min-width: 992px) {
-  .jumbotron {
-    margin-top: -80px;
-    margin-bottom: 10px;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 15px;
-    align-items: center;
-  }
-} */
-
 /* MOBILE VERSION */
 
 @media (max-width: 991.98px) {
   #hero {
     margin-top: -200px;
   }
-}
-
-/* @media (max-width: 991.98px) {
-  .jumbotron {
-    margin-top: -277px;
-    position: absolute;
-  }
 
   .about .content img {
     width: 300px;
-    justify-content: center;
   }
-} */
+}
