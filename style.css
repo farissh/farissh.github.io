@@ -4,6 +4,10 @@ body {
   background-color: #e2edff;
 }
 
+p {
+  font-family: Karla;
+}
+
 /* Navbar */
 
 .navbar {
@@ -34,7 +38,7 @@ body {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -63,26 +67,8 @@ body {
   line-height: 56px;
   text-transform: uppercase;
   color: #e2edff;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #e2edff;
-  color: #e2edff;
-  margin-top: -30px;
-}
-
-#hero .btn-get-started:hover {
-  background: #e2edff;
-  border: 2px solid #e2edff;
+  font-family: Montserrat;
+  text-shadow: 2px 2px #000000;
 }
 
 @media (min-width: 992px) {
@@ -135,6 +121,11 @@ section {
   width: 350px;
 }
 
+.about h1 {
+  text-transform: uppercase;
+  font-family: Merriweather;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -159,8 +150,14 @@ section {
 
 /* PRODUCT AND SERVICE */
 
-#service .row .judul-layanan {
+.judul-layanan {
   text-transform: uppercase;
+  font-family: "Noticia Text";
+}
+
+.bi {
+  color: blue;
+  font-size: 50px;
 }
 
 /* DESKTOP VERSION */
