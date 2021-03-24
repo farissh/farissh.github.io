@@ -1,66 +1,145 @@
-.nav-link {
-  color: black;
-}
+/* General */
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(69, 139, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler {
-  border-color: rgba(69, 139, 255, 0.5);
-}
-.jumbotron {
-  background-image: url("img/background4.jpg");
-  background-size: cover;
-  height: 873px;
-  position: relative;
-  display: flex;
-}
-
-.jumbotron > .container > .display-4 {
-  text-align: center;
-}
-
-.panel {
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
-  background-color: white;
-  padding: 30px;
-}
-
-.navbar {
-  z-index: 1;
-}
-
-.judul-panel {
-  margin: 20px 0px 20px 0px;
-}
-
-.carousel {
-  width: 240px;
-  height: 120px;
-  margin: auto;
-}
-
-#contact {
+body {
   background-color: #e2edff;
 }
 
-.contact {
-  margin-top: 90px;
+/* Navbar */
+
+.navbar {
+  z-index: 1;
+  background-color: rgba(115, 162, 216, 0.3);
+  padding: -10px;
 }
 
-footer {
-  margin-top: 10px;
+.navbar-brand {
+  font-size: 30px;
+  font-family: lora;
 }
 
-body {
-  background-color: b#e2edff;
+.nav-link {
+  text-transform: uppercase;
+  font-family: lora;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-image: url("img/background4.png");
+  background-size: cover;
+  height: 1080px;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: "";
+  background: rgba(5, 44, 63, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.jumbotron .display-4 {
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+  color: #e2edff;
+  margin-top: 350px;
+}
+
+/* Section */
+
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f9fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #052c3f;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/* About */
+
+.about .content img {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 350px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.about .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #85b0be;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* PRODUCT AND SERVICE */
+
+#service .row .judul-layanan {
+  text-transform: uppercase;
 }
 
 /* DESKTOP VERSION */
 
 @media (min-width: 992px) {
   .jumbotron {
-    margin-top: -100px;
+    margin-top: -80px;
+    margin-bottom: 10px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    align-items: center;
+  }
+}
+
+/* MOBILE VERSION */
+
+@media (max-width: 991.98px) {
+  .jumbotron {
+    margin-top: -277px;
+  }
+
+  .about .content img {
+    width: 300px;
+    justify-content: center;
   }
 }
