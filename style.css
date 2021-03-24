@@ -8,32 +8,33 @@ body {
 
 .navbar {
   z-index: 1;
-  background-color: rgba(115, 162, 216, 0.3);
-  padding: -10px;
+  font-family: lora;
 }
 
 .navbar-brand {
-  font-size: 30px;
+  text-transform: uppercase;
   font-family: lora;
+  font-weight: bold;
 }
 
 .nav-link {
   text-transform: uppercase;
-  font-family: lora;
 }
 
-/* Jumbotron */
+/* HERO */
 
-.jumbotron {
-  background-image: url("img/background4.png");
-  background-size: cover;
+#hero {
+  width: 100%;
   height: 1080px;
+  background: url("img/background5.jpg") top center;
+  background-size: cover;
   position: relative;
+  margin-top: -70px;
 }
 
-.jumbotron::before {
+#hero:before {
   content: "";
-  background: rgba(5, 44, 63, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -41,11 +42,60 @@ body {
   right: 0;
 }
 
-.jumbotron .display-4 {
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  text-shadow: 3px 3px #000000;
+  padding: 0 15px;
+}
+
+#hero h1 {
+  margin: 0 0 50px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
   color: #e2edff;
-  margin-top: 350px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 2px solid #e2edff;
+  color: #e2edff;
+  margin-top: -30px;
+}
+
+#hero .btn-get-started:hover {
+  background: #e2edff;
+  border: 2px solid #e2edff;
+}
+
+@media (min-width: 992px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 /* Section */
@@ -115,7 +165,7 @@ section {
 
 /* DESKTOP VERSION */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .jumbotron {
     margin-top: -80px;
     margin-bottom: 10px;
@@ -129,17 +179,24 @@ section {
     padding: 0 15px;
     align-items: center;
   }
-}
+} */
 
 /* MOBILE VERSION */
 
 @media (max-width: 991.98px) {
+  #hero {
+    margin-top: -200px;
+  }
+}
+
+/* @media (max-width: 991.98px) {
   .jumbotron {
     margin-top: -277px;
+    position: absolute;
   }
 
   .about .content img {
     width: 300px;
     justify-content: center;
   }
-}
+} */
