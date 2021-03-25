@@ -146,6 +146,15 @@ section {
 
 /* PRODUCT AND SERVICE */
 
+#service .card {
+  margin: auto;
+  float: none;
+}
+
+#service .card-title {
+  font-family: Merriweather;
+}
+
 .judul-layanan {
   text-transform: uppercase;
   font-family: "Noticia Text";
