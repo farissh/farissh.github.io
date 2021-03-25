@@ -162,31 +162,94 @@
         </div>
         <div class="for-slick-slider multiple-items">
           <div class="items">
-            <img src="img/client/client1.jpeg" alt="client1">
+            <img src="img/client/client1.png" alt="client1">
           </div>
           <div class="items">
-            <img src="img/client/client2.jpeg" alt="client2">
+            <img src="img/client/client2.png" alt="client2">
           </div>
           <div class="items">
-            <img src="img/client/client3.jpeg" alt="client3">
+            <img src="img/client/client3.png" alt="client3">
           </div>
           <div class="items">
-            <img src="img/client/client4.jpeg" alt="client4">
+            <img src="img/client/client4.png" alt="client4">
           </div>
           <div class="items">
-            <img src="img/client/client5.jpeg" alt="client5">
+            <img src="img/client/client5.png" alt="client5">
           </div>
           <div class="items">
-            <img src="img/client/client6.jpeg" alt="client6">
+            <img src="img/client/client6.png" alt="client6">
           </div>
         </div>
       </div>
     </section>
     <!-- End of Client -->
 
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1 style="text-transform: uppercase;font-family: Merriweather;">Contact Us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="map">
+              <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?q=albatros%20logistik%20express%20(bulak%20kapal)&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="info-wrap mt-5">
+            <div class="row">
+              <div class="col-lg-4 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Jl HM Djoyomartono No.8D Bulak Kapal, Margahayu, Bekasi Timur, Jawa Barat, Indonesia<br> 17113</p>
+              </div>
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>albatroslogistik@gmail.com</p>
+              </div>
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-telephone"></i>
+                <h4>Call:</h4>
+                <p>+62 21 82697571</p>
+              </div>
+            </div>
+          </div>
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/php-form-validate.js"></script>
   </body>
 </html>

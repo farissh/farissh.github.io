@@ -1,7 +1,5 @@
 $(".multiple-items").slick({
   infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
   centerMode: true,
   arrows: true,
   autoplay: true,
@@ -18,7 +16,7 @@ $(".multiple-items").slick({
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 720,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
