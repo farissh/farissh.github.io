@@ -30,7 +30,7 @@ p {
 #hero {
   width: 100%;
   height: 1080px;
-  background: url("img/background5.jpg") top center;
+  background: url("../../img/background5.jpg") top center;
   background-size: cover;
   position: relative;
   margin-top: -70px;
@@ -158,6 +158,22 @@ section {
 .bi {
   color: blue;
   font-size: 50px;
+}
+
+/* slider */
+
+.for-slick-slider {
+  display: flex;
+}
+
+.for-slick-slider .items {
+  height: 200px;
+  margin: 88px;
+}
+
+.for-slick-slider .items img {
+  height: 200px;
+  margin: auto;
 }
 
 /* MOBILE VERSION */
