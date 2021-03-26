@@ -36,7 +36,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: white">
       <div class="container">
         <h1 class="navbar-brand">Albatros</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,22 +104,35 @@
         <div class="section-title">
           <h1 class="mb-4" style="font-family: Merriweather; text-transform: uppercase">Service</h1>
         </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img src="img/card1.jpg" class="card-img-top" alt="card" />
-              <div class="card-body">
-                <h5 class="card-title">Land Freight</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card" style="width: 18rem">
+                  <img src="img/card1.jpg" class="card-img-top" alt="card1" />
+                  <div class="card-body">
+                    <h5 class="card-title">Land Freight</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="card" style="width: 18rem">
-              <img src="img/card2.jpg" class="card-img-top" alt="card" />
-              <div class="card-body">
-                <h5 class="card-title">Truck Tracking</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card" style="width: 18rem">
+                  <img src="img/card2.jpg" class="card-img-top" alt="card2" />
+                  <div class="card-body">
+                    <h5 class="card-title">Truck Tracking</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" style="width: 18rem">
+                  <img src="img/card3.jpg" class="card-img-top" alt="card3" />
+                  <div class="card-body">
+                    <h5 class="card-title">Fast Delivery</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -131,29 +144,67 @@
     <!-- Product -->
     <section id="product" class="services section-bg">
       <div class="container">
-        <div class="section-title">
-          <h1 style="font-family: Merriweather; text-transform: uppercase">Product</h1>
-        </div>
         <div class="row text-center">
-          <div class="col-lg-6 col-md-6">
-            <div class="gambar-layanan"><img src="img/truk-3.png" alt="truk 3" width="350" /></div>
-            <h4 class="judul-layanan">Tronton</h4>
-            <p class="description">Dimensions : 9.3 M</p>
+          <div class="col">
+            <h1 class="mb-4" style="font-family: Merriweather; text-transform: uppercase">Product & Specification</h1>
           </div>
-          <div class="col-lg-6 col-md-6 icon-box">
-            <div class="gambar-layanan"><img src="img/truk-1.png" alt="truk 3" width="270" /></div>
-            <h4 class="judul-layanan">Fuso</h4>
-            <p class="description">Dimensions : 7.3 M</p>
+        </div>
+        <div class="product-wrap mt-5">
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img src="img/truk-3.png" alt="truk3" width="90%" />
+            </div>
+            <div class="col-lg-6 product-description">
+              <h4>Trailer</h4>
+              <p>
+                -spek 1 <br />
+                -spek 2 <br />
+                -spek 3 <br />
+                -spek 4
+              </p>
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 icon-box">
-            <div class="gambar-layanan"><img src="img/truk-1.png" alt="truk 1" width="270" /></div>
-            <h4 class="judul-layanan">CDD Long</h4>
-            <p class="description">Dimensions : 5.5 M</p>
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img src="img/truk-1.png" alt="truk1" class="product-image" />
+            </div>
+            <div class="col-lg-6 product-description">
+              <h4>Fuso</h4>
+              <p>
+                -spek 1 <br />
+                -spek 2 <br />
+                -spek 3 <br />
+                -spek 4
+              </p>
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 icon-box">
-            <div class="gambar-layanan"><img src="img/truk-1.png" alt="truk 1" width="270" /></div>
-            <h4 class="judul-layanan">CDD</h4>
-            <p class="description">Dimensions : 4 M</p>
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img src="img/truk-1.png" alt="truk1" class="product-image" />
+            </div>
+            <div class="col-lg-6 product-description">
+              <h4>CDD Long</h4>
+              <p>
+                -spek 1 <br />
+                -spek 2 <br />
+                -spek 3 <br />
+                -spek 4
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 info">
+              <img src="img/truk-1.png" alt="truk1" class="product-image" />
+            </div>
+            <div class="col-lg-6 product-description">
+              <h4>CDD</h4>
+              <p>
+                -spek 1 <br />
+                -spek 2 <br />
+                -spek 3 <br />
+                -spek 4
+              </p>
+            </div>
           </div>
         </div>
       </div>
